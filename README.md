@@ -6,3 +6,5 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 ---
 
 ## 🎮 Live Demo
+
+- Host this folder on any static host (Vercel, Netlify, GitHub Pages), or run a local server (instructions below). 
