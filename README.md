@@ -9,3 +9,5 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 
 - Host this folder on any static host (Vercel, Netlify, GitHub Pages), or run a local server (instructions below).
 - Entry file: `index.html`
+
+---
