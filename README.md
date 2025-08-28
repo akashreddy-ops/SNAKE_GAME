@@ -12,3 +12,5 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - Entry file: `index.html`
 
 ---
+
+## ✨ Features
