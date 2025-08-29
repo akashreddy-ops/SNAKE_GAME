@@ -14,3 +14,5 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 ---
 
 ## ✨ Features
+
+- Smooth game loop using `requestAnimationFrame`
