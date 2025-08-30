@@ -16,3 +16,4 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 ## ✨ Features
 
 - Smooth game loop using `requestAnimationFrame`
+- Arrow-key controls with built-in **direction lock** to prevent instant 180° turns
