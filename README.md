@@ -19,3 +19,4 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - Arrow-key controls with built-in **direction lock** to prevent instant 180° turns
 - **21×21 grid** with DOM grid layout
 - **Food spawns** at random empty tiles (never on the snake)
+- Snake **grows** when it eats food
