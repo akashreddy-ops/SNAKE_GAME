@@ -20,3 +20,4 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - **21×21 grid** with DOM grid layout
 - **Food spawns** at random empty tiles (never on the snake)
 - Snake **grows** when it eats food
+- **Game Over** when the snake hits the wall or itself, with a quick **restart** prompt
