@@ -22,3 +22,7 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - Snake **grows** when it eats food
 - **Game Over** when the snake hits the wall or itself, with a quick **restart** prompt
 - Minimal, readable code split into **modules**
+
+---
+
+## 🕹️ Controls
