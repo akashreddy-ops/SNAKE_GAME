@@ -29,4 +29,5 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 
 - **Arrow Up (↑)** — move up
 - **Arrow Down (↓)** — move down
-- **Arrow Left (←)** — move left 
+- **Arrow Left (←)** — move left
+- **Arrow Right (→)** — move right  
