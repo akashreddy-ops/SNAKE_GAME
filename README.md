@@ -30,4 +30,6 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - **Arrow Up (↑)** — move up
 - **Arrow Down (↓)** — move down
 - **Arrow Left (←)** — move left
-- **Arrow Right (→)** — move right  
+- **Arrow Right (→)** — move right
+
+> Tip: The code prevents reversing direction immediately (e.g., going up to down in one frame).
