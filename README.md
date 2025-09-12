@@ -33,3 +33,8 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 - **Arrow Right (→)** — move right
 
 > Tip: The code prevents reversing direction immediately (e.g., going up to down in one frame).
+
+---
+
+## 🗂️ Project Structure
+```
