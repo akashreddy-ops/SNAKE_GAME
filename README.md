@@ -38,3 +38,13 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 
 ## 🗂️ Project Structure
 ```
+📦 snake-game
+├── index.html        # Page, styles, and module script import
+├── game.js           # Main loop: update/draw + game over handling
+├── snake.js          # Snake state, movement, drawing, collisions
+├── food.js           # Food placement, growth handling
+├── grid.js           # Grid size + helpers (random positions, bounds)
+└── input.js          # Keyboard input & direction locking
+```
+
+---
