@@ -48,3 +48,6 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 ```
 
 ---
+
+## 🚀 Getting Started (Local)
+Because the project uses ES Modules (`type="module"`), open it with a **local server** (not by double-clicking the HTML).
