@@ -53,3 +53,4 @@ An elegant, beginner-friendly **Snake Game** built with **HTML**, **CSS**, and *
 Because the project uses ES Modules (`type="module"`), open it with a **local server** (not by double-clicking the HTML).
 
 ### Option A: VS Code Live Server
+1. Install the **Live Server** extension.
