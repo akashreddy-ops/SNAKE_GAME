@@ -55,3 +55,9 @@ Because the project uses ES Modules (`type="module"`), open it with a **local se
 ### Option A: VS Code Live Server
 1. Install the **Live Server** extension.
 2. Right‑click `index.html` → **Open with Live Server**.
+
+### Option B: Node (npx serve)
+```bash
+npx serve .
+# then open the printed URL in your browser
+```
