@@ -61,3 +61,12 @@ Because the project uses ES Modules (`type="module"`), open it with a **local se
 npx serve .
 # then open the printed URL in your browser
 ```
+
+### Option C: Python
+```bash
+# Python 3
+python -m http.server 8080
+# visit http://localhost:8080
+```
+
+---
