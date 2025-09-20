@@ -70,3 +70,11 @@ python -m http.server 8080
 ```
 
 ---
+
+## 🧠 How It Works (High-Level)
+1. **Game Loop** — `requestAnimationFrame` repeatedly calls `main()`, which throttles updates to match the chosen snake speed.  
+2. **Update Phase** — Move the snake, handle growth, place food, and check for death.  
+3. **Draw Phase** — Clear the board and re-render the snake and food as grid‑positioned `<div>`s.  
+4. **Game Over** — If the snake goes out of bounds or hits itself, show a confirm dialog and reload to restart.
+
+---
