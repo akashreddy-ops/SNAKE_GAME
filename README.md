@@ -78,3 +78,12 @@ python -m http.server 8080
 4. **Game Over** — If the snake goes out of bounds or hits itself, show a confirm dialog and reload to restart.
 
 ---
+
+## 🔍 Code Walkthrough (Step by Step)
+
+### `index.html`
+- Defines a centered square **game board** that uses CSS Grid for a 21×21 layout.
+- Injects the `game.js` script as a **module** so it can import other files.
+- Styles:
+  - `.snake` tiles are greenish with a border.
+  - `.food` tiles are red with a border.
