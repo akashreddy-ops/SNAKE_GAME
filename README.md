@@ -87,3 +87,41 @@ python -m http.server 8080
 - Styles:
   - `.snake` tiles are greenish with a border.
   - `.food` tiles are red with a border.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <style>
+    /* Center the board, make it a square using vmin */
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: black;
+    }
+    /* 21x21 grid board */
+    #game-board {
+      background-color: white;
+      width: 100vmin;
+      height: 100vmin;
+      display: grid;
+      grid-template-rows: repeat(21, 1fr);
+      grid-template-columns: repeat(21, 1fr);
+    }
+    .snake { background-color: #badd78; border: .25vmin solid black; }
+    .food  { background-color: #ad2f2f; border: .25vmin solid black; }
+  </style>
+  <script src="game.js" defer type="module"></script>
+</head>
+<body>
+  <div id="game-board"></div>
+</body>
+</html>
+```
