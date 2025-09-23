@@ -125,3 +125,9 @@ python -m http.server 8080
 </body>
 </html>
 ```
+
+### `game.js`
+- Imports **snake** and **food** update/draw functions.
+- Manages the **main loop** with `requestAnimationFrame`.
+- Limits updates to the chosen `SNAKE_SPEED` (times per second).
+- Handles **game over**: if dead, asks to restart and reloads the page.
