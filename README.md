@@ -173,3 +173,10 @@ function checkDeath() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
 }
 ```
+
+### `snake.js`
+- Exposes `SNAKE_SPEED` (moves per second).
+- Maintains the `snakeBody` list of segments (head at index 0).
+- Moves the snake by copying positions **from tail to head**, then updating head by the current input direction.
+- `expandSnake(amount)` adds queued segments when the snake eats.
+- Collision helpers: `getSnakeHead()`, `onSnake()`, `snakeIntersection()`.
