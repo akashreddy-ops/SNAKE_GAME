@@ -230,3 +230,7 @@ function addSegments() {
   newSegments = 0;
 }
 ```
+
+### `input.js`
+- Listens for **Arrow key** presses.
+- Uses `lastInputDirection` to prevent immediate reversal (e.g., left → right instantly).
