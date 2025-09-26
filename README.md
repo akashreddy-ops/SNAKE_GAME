@@ -180,3 +180,53 @@ function checkDeath() {
 - Moves the snake by copying positions **from tail to head**, then updating head by the current input direction.
 - `expandSnake(amount)` adds queued segments when the snake eats.
 - Collision helpers: `getSnakeHead()`, `onSnake()`, `snakeIntersection()`.
+
+```js
+import { getInputDirection } from './input.js';
+
+export const SNAKE_SPEED = 5;
+const snakeBody = [{ x: 11, y: 11 }];
+let newSegments = 0;
+
+export function update() {
+  addSegments();
+  const inputDirection = getInputDirection();
+  for (let i = snakeBody.length - 2; i >= 0; i--) {
+    snakeBody[i + 1] = { ...snakeBody[i] };
+  }
+  snakeBody[0].x += inputDirection.x;
+  snakeBody[0].y += inputDirection.y;
+}
+
+export function draw(gameBoard) {
+  snakeBody.forEach(segment => {
+    const el = document.createElement('div');
+    el.style.gridRowStart = segment.y;
+    el.style.gridColumnStart = segment.x;
+    el.classList.add('snake');
+    gameBoard.appendChild(el);
+  });
+}
+
+export function expandSnake(amount) { newSegments += amount; }
+
+export function onSnake(position, { ignoreHead = false } = {}) {
+  return snakeBody.some((segment, index) => {
+    if (ignoreHead && index === 0) return false;
+    return segment.x === position.x && segment.y === position.y;
+  });
+}
+
+export function getSnakeHead() { return snakeBody[0]; }
+
+export function snakeIntersection() {
+  return onSnake(snakeBody[0], { ignoreHead: true });
+}
+
+function addSegments() {
+  for (let i = 0; i < newSegments; i++) {
+    snakeBody.push({ ...snakeBody[snakeBody.length - 1] });
+  }
+  newSegments = 0;
+}
+```
