@@ -269,3 +269,58 @@ export function getInputDirection() {
 ### `grid.js`
 - Defines a **21×21** play area and a helper to check when a position goes **out of bounds**.
 - `randomGridPosition()` returns a random `{ x, y }` inside the grid.
+
+```js
+const GRID_SIZE = 21;
+
+export function randomGridPosition() {
+  return {
+    x: Math.floor(Math.random() * GRID_SIZE) + 1,
+    y: Math.floor(Math.random() * GRID_SIZE) + 1
+  };
+}
+
+export function outsideGrid(position) {
+  return (
+    position.x < 1 || position.x > GRID_SIZE ||
+    position.y < 1 || position.y > GRID_SIZE
+  );
+}
+```
+
+### `food.js`
+- Keeps a `food` position that **never overlaps the snake**.
+- When the snake head touches food (`onSnake(food)`), it calls `expandSnake(EXPANSION_RATE)` and repositions the food.
+
+```js
+import { onSnake, expandSnake } from './snake.js';
+import { randomGridPosition } from './grid.js';
+
+let food = getRandomFoodPosition();
+const EXPANSION_RATE = 5;
+
+export function update() {
+  if (onSnake(food)) {
+    expandSnake(EXPANSION_RATE);
+    food = getRandomFoodPosition();
+  }
+}
+
+export function draw(gameBoard) {
+  const el = document.createElement('div');
+  el.style.gridRowStart = food.y;
+  el.style.gridColumnStart = food.x;
+  el.classList.add('food');
+  gameBoard.appendChild(el);
+}
+
+function getRandomFoodPosition() {
+  let newPos;
+  while (newPos == null || onSnake(newPos)) {
+    newPos = randomGridPosition();
+  }
+  return newPos;
+}
+```
+
+---
