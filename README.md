@@ -265,3 +265,7 @@ export function getInputDirection() {
   return inputDirection;
 }
 ```
+
+### `grid.js`
+- Defines a **21×21** play area and a helper to check when a position goes **out of bounds**.
+- `randomGridPosition()` returns a random `{ x, y }` inside the grid.
