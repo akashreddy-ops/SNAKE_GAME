@@ -324,3 +324,5 @@ function getRandomFoodPosition() {
 ```
 
 ---
+
+## 🧩 Customization
