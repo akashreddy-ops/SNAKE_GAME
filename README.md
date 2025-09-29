@@ -368,4 +368,4 @@ Built with ❤️ as a learning project. Contributions, suggestions, and stars a
 ---
 
 ## 📄 License
-This project is open-source under the **MIT License**. Feel free to use, learn from, and modify
+This project is open-source under the **MIT License**. Feel free to use, learn from, and modify.
